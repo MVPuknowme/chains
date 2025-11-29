@@ -17,4 +17,4 @@ data class Chain(
     val nativeCurrency: NativeCurrency
 )
 
-fun List<Chain>.filterEIP3019Explorers() = map { it.copy(explorers = it.explorers?.filterEIP3019()) }
+fun List<Chain>.filterEIP3011Explorers() = map { it.copy(explorers = it.explorers?.filterEIP3019()) }
